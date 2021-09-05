@@ -82,6 +82,9 @@ h1, h2, h3, h4, h5, h6 {
 .p-2 {padding: 1.5rem 0;}
 .p-3 {padding: 1.5rem 0;}
 
+.l-heading {
+  font-size: 3rem;
+}
 /*Utility */
 .container {
   max-width: var(--max-width);
@@ -261,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 /* About */
 .page-container {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 5fr 2fr;
   margin: 2rem 0;
   gap: 1.5rem;
 }
@@ -271,4 +274,15 @@ h1, h2, h3, h4, h5, h6 {
 .page-container > *:last-child{
   width: 100%;
   padding: 1rem;
+}
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+#article .meta .category {
+  margin-top: 0.4rem;
 }
